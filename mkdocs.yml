@@ -1,0 +1,4 @@
+site_name: INSA TC CIT
+nav:
+    - Home: index.md
+    - Session 1: 1_publish_mqtt/README.md
