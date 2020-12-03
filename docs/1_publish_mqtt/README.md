@@ -200,3 +200,31 @@ docker run cxp-insa-tp-iot-mqtt-client
 ```
 
 The Python program publishes 1000 messages/s to the topic `cxp_insa_tp_iot_mqtt_topic` that you created in the AWS IoT Core console. View the topic in the console to see the published messages.
+
+## Verification
+Make sure that number of incoming messages corespond what we've sent
+
+### Select our IoT Analytics Channel
+1. Open the AWS IoT Analytics console.
+![](img/iot_analytics_service.png)
+
+1. Select channel
+![](img/iot_analytics_channel.png)
+
+1. Verify __Last message arrival time__
+![](img/iot_analytics_channel_last_msg.png)
+
+### Use Cloudwatch to find number of message per minute
+__Description__: Amazon CloudWatch is a monitoring and observability service built for DevOps engineers, developers, site reliability engineers (SREs), and IT managers. CloudWatch provides you with data and actionable insights to monitor your applications, respond to system-wide performance changes, optimize resource utilization, and get a unified view of operational health. CloudWatch collects monitoring and operational data in the form of logs, metrics, and events, providing you with a unified view of AWS resources, applications, and services that run on AWS and on-premises servers.
+
+1. In __Monitoring__ section, click on `:`
+![](img/cloudwatch_1.png)
+
+1. Then __View in mertics__
+![](img/cloudwatch_2.png)
+
+1. Select __1 minute__ as as __Period__
+![](img/cloudwatch_3.png)
+
+1. Verify there are 1200-1300 messages/minute
+![](img/cloudwatch_4.png)
