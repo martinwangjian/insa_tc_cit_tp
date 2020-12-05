@@ -1,4 +1,4 @@
-# Session 2
+# Session 3
 How to visualize data with BI tool?
 
 ## Architecture
