@@ -1,6 +1,7 @@
 site_name: INSA TC CIT
 nav:
     - Home: index.md
+    - Session 0: 0_authentication/README.md
     - Session 1: 1_publish_mqtt/README.md
     - Session 2: 2_temperature_extraction/README.md
     - Session 3: 3_visualization/README.md
