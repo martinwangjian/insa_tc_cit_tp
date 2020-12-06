@@ -99,7 +99,7 @@ In this section:
 1. In the AWS IoT Core console, in the left navigation pane, choose Settings.
 ![](img/iot_core_settings.png)
 
-1. On the Settings page, under Custom endpoint, copy the Endpoint. This AWS IoT Core custom endpoint URL is personal to your AWS account and Region.
+1. On the Settings page, under Custom endpoint, copy the Endpoint. This AWS IoT Core custom endpoint URL is personal to your AWS account and Region. It is the entry point for your sensors messages.
 ![](img/iot_core_endpoint.png)
 
 ## AWS IoT Analytics
@@ -174,7 +174,7 @@ In this section, we will configure our mqtt client with docker:
 
 ### Update configuration MQTT Client
 
-1. Update and adjust theses configurations of `mqtt_client_json_publisher.py` in this folder:
+1. Update and adjust theses configurations of `mqtt_client_json_publisher.py`. the endpoint variable refers to the AWS IoT Core endpoint your created at the beginning of the lab:
 ```python
 # Configuration
 # Define ENDPOINT, CLIENT_ID, PATH_TO_CERT, PATH_TO_KEY, PATH_TO_ROOT, MESSAGE, TOPIC, and RANGE
@@ -192,7 +192,7 @@ PORT = 8883
 docker build -t cxp-insa-tp-iot-mqtt-client .
 ```
 
-# TODO How to deploy and run in rasberrypi device farm?
+# How to deploy and run in rasberrypi device farm?
 
 ### publish MQTT messages with docker container
 ```bash

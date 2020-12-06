@@ -33,6 +33,36 @@ __Note__: __*An Amazon S3 bucket name is globally unique, and the namespace is s
 1. Keep default options and Create bucket:
 ![](img/s3_create_bucket_2.png)
 
+1. Once created, go to the bucket `cxp-insa-tp-iot-analytics-datastore-<your group id>`. In "Permissions", edit "Bucket policy" and enter the following configuration and "save changes":
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": {
+                    "Service": "iotanalytics.amazonaws.com"
+                },
+            "Action": [
+                    "s3:GetBucketLocation",
+                    "s3:GetObject",
+                    "s3:ListBucket",
+                    "s3:ListBucketMultipartUploads",
+                    "s3:ListMultipartUploadParts",
+                    "s3:AbortMultipartUpload",
+                    "s3:PutObject",
+                    "s3:DeleteObject"
+                ],
+            "Resource": [
+                    "arn:aws:s3:::cxp-insa-tp-iot-analytics-datastore-<your group id>",
+                    "arn:aws:s3:::cxp-insa-tp-iot-analytics-datastore-<your group id>/*"
+                ]
+        }
+    ]
+}
+
+```
+
 ### Create an AWS IoT Analytics Datastore
 1. Open the AWS IoT Analytics console.
 ![](img/iot_analytics_service.png)
