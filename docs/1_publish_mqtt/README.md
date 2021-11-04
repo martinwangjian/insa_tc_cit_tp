@@ -53,7 +53,7 @@ __*Note*__: *You don't need to create a thing to connect to AWS IoT. However, th
 1. In the AWS IoT Core console, in the left navigation pane, choose Manage.
 ![](img/iot_core_manage.png)
 
-1. Choose Register a thing.
+1. Choose Create things.
 ![](img/iot_core_manage_thing.png)
 
 1. On the Creating AWS IoT things page, choose Create a single thing.
@@ -63,34 +63,15 @@ __*Note*__: *You don't need to create a thing to connect to AWS IoT. However, th
 Enter a Name for your thing. For example, `cxp_insa_tp_iot_thing`.
 ![](img/iot_core_manage_single_thing_name.png)
 
-1. On the Add a certificate for your thing page, choose Create certificate. You see notifications confirming that your thing and a certificate for your thing are created.
+1. On the Add a certificate for your thing page, choose Auto-generate a new certificate.
 ![](img/iot_core_manage_single_thing_certif.png)
+![](img/iot_core_manage_single_thing_certif_policy.png)
 
 1. On the Certificate created page, do the following:
 Under In order to connect a device, you need to download the following, choose Download for the certificate, and private key.
 ![](img/iot_core_manage_single_thing_dl.png)
 
 Save each of the downloaded files to `certificates` folder of this repo.
-
-Under You also need to download a root CA for AWS IoT, choose Download. The Server authentication page opens to CA certificates for server authentication.
-![](img/iot_core_manage_single_thing_ca1.png)
-
-1. Under Amazon Trust Services Endpoints (preferred), choose Amazon Root CA 1. The certificate opens in your browser.
-![](img/iot_core_manage_single_thing_ca2.png)
-
-1. Copy the certificate (everything from -----BEGIN CERTIFICATE----- to -----END CERTIFICATE-----) and paste it into a text editor.
-
-1. Save the certificate as `AmazonRootCA1.pem` to `certificates` folder of this repo..
-
-1. On the Certificate created page in the AWS IoT Core console, choose Activate. The button changes to Deactivate.
-
-1. Choose Attach a policy.
-![](img/iot_core_manage_single_thing_attach_policy.png)
-
-1. On the Add a policy for your thing page, do the following:
-Select the AWS IoT Core policy that you previously created. For example, admin.
-Choose Register Thing.
-![](img/iot_core_manage_single_thing_reg_thing.png)
 
 ### Copy the AWS IoT Core endpoint URL
 In this section:
@@ -99,7 +80,7 @@ In this section:
 1. In the AWS IoT Core console, in the left navigation pane, choose Settings.
 ![](img/iot_core_settings.png)
 
-1. On the Settings page, under Custom endpoint, copy the Endpoint. This AWS IoT Core custom endpoint URL is personal to your AWS account and Region. It is the entry point for your sensors messages.
+1. On the Settings page, under Device data endpoint, copy the Endpoint. This AWS IoT Core Device data endpoint URL is personal to your AWS account and Region. It is the entry point for your sensors messages.
 ![](img/iot_core_endpoint.png)
 
 ## AWS IoT Analytics
