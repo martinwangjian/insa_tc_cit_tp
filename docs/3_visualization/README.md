@@ -80,15 +80,6 @@ In this section, we will use QuickSight to visualize data:
 1. Finalyze QuickSight account creation.
 ![](img/quicksight_welcome.png)
 
-1. Grant QuickSight permission to access IoT Analytics: __Manage QuickSight__>__Security & permissions__>__Add or remove__
-![](img/quicksight_manage.png)
-
-1. Select __AWS IoT Analytics__
-![](img/quicksight_add_permission.png)
-
-1. Verification
-![](img/quicksight_verify_permission.png)
-
 ### Create an Analyse
 
 1. Add dataset

@@ -127,9 +127,6 @@ An AWS IoT Analytics Pipeline consumes messages from one or more Channels. Pipel
 1. After pipeline creation, Select `cxp_insa_tp_iot_pipeline`
 ![](img/iot_analytics_pipeline_create_13.png)
 
-1. After pipeline creation, Select `cxp_insa_tp_iot_pipeline`
-![](img/iot_analytics_pipeline_create_13.png)
-
 1. __Reprocess messages__
 ![](img/iot_analytics_pipeline_create_14.png)
 

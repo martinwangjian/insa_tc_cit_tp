@@ -1,4 +1,4 @@
-# Session 5
+# Session 5(optional)
 How to use IoT Analytics Dataset to train a machine learning model?
 
 ## Architecture
